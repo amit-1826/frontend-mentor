@@ -1,8 +1,8 @@
 export default function HomePage() {
   return (
     <div className="home-page">
-      <h1 className="home-page-title">Your Success = Our Mission</h1>
-      <p className="home-page-description">
+      <h1 className="page-title">Your Success = Our Mission</h1>
+      <p className="page-description">
         Frontend Mentor is a platform that helps you improve your frontend
         skills by building real projects. Join our community and start coding
         today!

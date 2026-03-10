@@ -91,3 +91,288 @@ height: 70px;
   border-radius: 50%;
   margin-right: 0.5rem;
 }
+
+.sessions-list {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  background-color: #f2f2f2;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.page-description {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.session-card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.session-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.session-card-content {
+  padding: 1rem;
+}
+
+.session-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.session-card-author {
+  font-size: 0.875rem;
+  color: #999;
+  margin-bottom: 1rem;
+}
+
+.session-card-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.session-card-cta {
+  background-color: #0052ff;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #0052ff;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #003d99;
+}
+
+.btn-primary {
+  background-color: #0052ff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #f2f2f2;
+  color: #020203;
+}
+
+.session-card-cta:hover {
+  background-color: #003d99;
+}
+
+.session-details {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.session-details img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.session-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.session-info h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.session-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.session-info .published-date {
+  font-size: 0.875rem;
+  color: #999;
+}
+
+.session-info-cta {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.session-metadata {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+}
+
+.session-metadata h2 {
+  margin-bottom: 1rem;
+}
+
+.session-agenda-list {
+  list-style-type: square;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 1.5rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.session-prerequisites-list {
+  list-style-type: square;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 1.5rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 400px;
+  /* text-align: center; */
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modal-header .close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-content {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.book-session-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.book-session-form h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.book-session-form label {
+  font-weight: 600;
+}
+
+.book-session-form input,
+.book-session-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.upcoming-sessions-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.upcoming-sessions-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.no-sessions-message {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.upcoming-session-item {
+  background-color: #f2f2f2;
+  padding: 0.5rem;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+}
+
+.upcoming-session-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.upcoming-session-info .upcoming-session-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.upcoming-session-info .upcoming-session-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.upcoming-session-info .upcoming-session-date {
+  font-size: 0.875rem;
+  color: #999;
+}
+
+.color-red {
+  color: red;
+}
