@@ -25,17 +25,13 @@ export default function Header() {
         </div>
         <nav className="nav-main">
           <ul className="nav-list">
-            <Button className="nav-list-item" textonly={true} to="/">
+            <Button textonly={true} to="/">
               Our Mission
             </Button>
-            <Button className="nav-list-item" textonly={true} to="/sessions">
+            <Button textonly={true} to="/sessions">
               Browse Sessions
             </Button>
-            <Button
-              textonly={false}
-              onClick={showUpcomingSessionsHandler}
-              className="nav-list-item"
-            >
+            <Button textonly={false} onClick={showUpcomingSessionsHandler}>
               Upcoming Sessions
             </Button>
           </ul>
