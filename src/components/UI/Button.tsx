@@ -7,8 +7,8 @@ type BaseButtonProps = {
 
 type LinkProp = LinkProps & BaseButtonProps & { to: string };
 
-type ButtonProp = ComponentPropsWithoutRef<"button"> &
-  BaseButtonProps & { to?: never };
+type ButtonProp = Omit<ComponentPropsWithoutRef<"button">, "type"> &
+  BaseButtonProps & { to?: never; type?: "button" | "submit" | "reset" };
 
 export default function Button(props: LinkProp | ButtonProp) {
   const textOnlyClass = props.textonly ? "text-only" : undefined;
@@ -20,8 +20,9 @@ export default function Button(props: LinkProp | ButtonProp) {
     );
   }
 
+  const { ...buttonProps } = props as ButtonProp;
   return (
-    <button className={`button ${textOnlyClass}`} {...props}>
+    <button className={`button ${textOnlyClass}`} {...buttonProps}>
       {props.children}
     </button>
   );
