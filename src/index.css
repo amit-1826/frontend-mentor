@@ -1,5 +1,5 @@
 :root {
-  --bg-main: #F7F7F7;
+  --bg-main: #3b7bff;
   --text-color: #020203;
   --bg-primary: #263350;
   --color-primary: #ffffff;
@@ -14,7 +14,7 @@
 body {
   background-color: var(--bg-main);
   font-family: 'Roboto', sans-serif;
-  color: #020203;
+  color: #fffafa;
 }
 
 .button {
@@ -101,6 +101,7 @@ height: 70px;
   gap: 1rem;
   padding: 1rem;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .page-title {
@@ -134,6 +135,7 @@ height: 70px;
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  color: #020203;
 }
 
 .session-card-author {
@@ -211,7 +213,7 @@ height: 70px;
 
 .session-info p {
   font-size: 1rem;
-  color: #555;
+  color: #fffafa;
 }
 
 .session-info .published-date {
@@ -233,6 +235,7 @@ height: 70px;
 
 .session-metadata h2 {
   margin-bottom: 1rem;
+  color: #020203;
 }
 
 .session-agenda-list {
@@ -273,6 +276,7 @@ height: 70px;
   padding: 2rem;
   border-radius: 5px;
   width: 400px;
+  color: #020203;
   /* text-align: center; */
 }
 
@@ -375,4 +379,8 @@ height: 70px;
 
 .color-red {
   color: red;
+}
+
+.session-about-author {
+  color: #555;
 }

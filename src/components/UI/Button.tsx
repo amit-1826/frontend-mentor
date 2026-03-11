@@ -22,7 +22,7 @@ export default function Button(props: LinkProp | ButtonProp) {
 
   const { ...buttonProps } = props as ButtonProp;
   return (
-    <button className={`button ${textOnlyClass}`} {...buttonProps}>
+    <button className={`btn ${textOnlyClass}`} {...buttonProps}>
       {props.children}
     </button>
   );
